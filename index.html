@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiconic</title>
+    <link rel="shortcut icon" href="./assets/music-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./assets/music-icon.png" alt="logo"> Musiconic</li>
+            <button id="button">Add Song +</button>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Hit Songs Of All Time</h1>
+        <div class="songsItem">
+        <div class="songsList">
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="0"></h3>
+                    <p>Alan Walker</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="1"></h3>
+                    <p>The Weekend</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/weekend.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="2"></h3>
+                    <p>Selena Gomez</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/swift.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="3"></h3>
+                    <p>Alan Walker</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/selena.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="4"></h3>
+                    <p>Alan Walker</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="5"></h3>
+                    <p>Taylor Swift</p>
+                </div>
+            </div>
+        </div>
+        <div class="songsList">
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="6"></h3>
+                    <p>Carlie Puth</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="7"></h3>
+                    <p>Ruth. B</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/weekend.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="8"></h3>
+                    <p>Katy Perry</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/swift.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="9"></h3>
+                    <p>Katy Perry</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/selena.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="10"></h3>
+                    <p>Camilla</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="11"></h3>
+                    <p>Coldplay</p>
+                </div>
+            </div>
+        </div>
+        <div class="songsList">
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="12"></h3>
+                    <p>One Direction</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/alan-walker.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="13"></h3>
+                    <p>Jennifre Lopez</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/weekend.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="14"></h3>
+                    <p>Ed Sheeran</p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/swift.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="15"></h3>
+                    <p>Shawn & Camilla</p> 
+                </div>
+            </div>
+            <div class="list">
+                <img src="./assets/selena.jpg" alt="">
+                <div class="details">
+                    <h3 class="songTitle" id="16"></h3>
+                    <p>Brandy</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="musicPlayer">
+        <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+            <i class="fa-solid fa-backward" id="back"></i>
+            <i class="fa-solid fa-play" id="PlayBtn"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+            <i class="fa-solid fa-rotate-left" id="repeat"></i>
+        </div>
+        <div class="musicName">
+            <p id="title">Alone - Alan Walker</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

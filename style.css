@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Mooli', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #DFCCFB; */
+    /* background-color: #190636; */
+    background: url("./assets/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* NAVBAR STYLING BEGINS HERE */
+nav{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 6rem;
+    /* background-color: #190636; */
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.6rem;
+}
+li{
+    list-style: none;
+    padding: 1.5rem 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+}
+.brand img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+/* NAVBAR STYLEING ENDS HERE */
+
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    padding: 1rem;
+    width: 75%;
+    margin: auto;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    backdrop-filter: blur(5px);
+}
+.container h1{
+    color: #B31312;
+    font-family: 'Mooli', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    background: radial-gradient(circle, rgba(189,15,215,1) 0%, rgba(243,115,3,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.songsItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    margin: 0.3rem 1.3rem;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.details h3{
+    cursor: pointer;
+}
+.details h3:hover{
+    color: #B31312;
+}
+.list img{
+    width: 3.5rem;
+    border-radius: 50%;
+    height: 3.5rem;
+}
+
+.musicPlayer{
+    position: sticky;
+    height: 7rem;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#progressBar{
+    width: 90%;
+    cursor: pointer;
+}
+.icons i{
+    padding: 0.7rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.icons{
+    margin-top: 1rem;
+}
+
+.musicName{
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+.musicName p{
+    color: #fff;
+    font-family: 'Mooli', sans-serif;
+}
+
+#button{
+    margin: 0.6rem;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    font-family: 'Mooli', sans-serif;
+    border-radius: 2rem;
+    margin-right: 0;
+    background: radial-gradient(circle, rgba(189,15,215,1) 0%, rgba(243,115,3,1) 100%);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#button:hover{
+    background: linear-gradient(90deg, rgba(215,15,29,1) 0%, rgba(3,28,243,1) 100%);
+}
+
+
+@media (max-width: 1000px){
+    .container h1{
+        font-size: 2rem;
+    }
+    .container{
+        width: 80%;
+        margin-top: 5rem;
+    }
+    .details h3{
+        font-size: 0.9rem;
+    }
+    .details p{
+        font-size: 0.6rem;
+    }
+    .list img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .list{
+        margin: auto auto;
+    }
+    nav{
+        height: 3.9rem;
+    }
+    .songsItem{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .list{
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px){
+    nav{
+        height: 2rem;
+    }
+    .brand{
+        font-size: 0.9rem;
+        margin-left: 0.1rem;
+    }
+    .brand img{
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    #button{
+        font-size: 0.8rem;
+    }
+    .icons{
+        margin-top: 2.1rem;
+    }
+    #progressBar{
+        margin-top: 1rem;
+    }
+}
